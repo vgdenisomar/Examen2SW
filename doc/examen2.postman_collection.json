@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "d24712ce-0919-42e7-b5cf-cbc9cd75fad4",
+		"name": "examen2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/examen/api/incidentes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/examen/api/incidentes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/examen/api/incidentes/5d25326cefa2c31dbcaedf6e",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/examen/api/incidentes/5d25326cefa2c31dbcaedf6e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"5d25326cefa2c31dbcaedf6e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/examen/api/incidentes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "toma",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "incidente",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "registrado",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/examen/api/incidentes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/examen/api/incidentes/asign/5d25390f6a2ebc0a50f541cb",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuarioAsignado",
+							"value": "orlando",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/examen/api/incidentes/asign/5d25390f6a2ebc0a50f541cb",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"asign",
+						"5d25390f6a2ebc0a50f541cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/examen/api/incidentes/close/5d25390f6a2ebc0a50f541cb",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuarioRegistra",
+							"value": "jose",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/examen/api/incidentes/close/5d25390f6a2ebc0a50f541cb",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"close",
+						"5d25390f6a2ebc0a50f541cb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/examen/api/incidentes/5d25326cefa2c31dbcaedf6e",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/examen/api/incidentes/5d25326cefa2c31dbcaedf6e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"5d25326cefa2c31dbcaedf6e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/examen/api/incidentes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "toma",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "llantas",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "registrado",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/examen/api/incidentes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
