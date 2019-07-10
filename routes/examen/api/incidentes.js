@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const ObjectID = require('mongodb').ObjectID;
 
 function routerInit(db) {
 
@@ -24,6 +24,17 @@ function routerInit(db) {
             return res.status(200).json(plantas);
         });
     });
+
+    router.get('/:id', (req, res, next)=>{
+        var query = {"_id": new ObjectID(req.params.id)}
+        incidentesCollection.findOne(query, (err, doc)=>{
+          if(err) {
+            console.log(err);
+            return res.status(401).json({"error":"Error al extraer documento"});
+          }
+          return res.status(200).json(doc);
+        });
+      });
 
     router.post('/', (req, res, next) => {
         var newElement = Object.assign({},
